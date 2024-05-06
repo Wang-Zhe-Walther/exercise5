@@ -1,14 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('loginForm');
-    const actionMessageElement = document.getElementById('loginStatus'); // 假设有一个元素用于显示登录状态信息
+    const actionMessageElement = document.getElementById('loginStatus'); // Let's say you have an element that displays login status information
+
 
     loginForm.addEventListener('submit', function(event) {
         event.preventDefault();
 
-        const username = document.getElementById('username').value; // 确保表单字段ID与这里的匹配
+        const username = document.getElementById('username').value; // Make sure the form field ID matches here
+
         const password = document.getElementById('password').value;
 
-        // 从Cookie中获取已存储的用户信息
+        // Obtain stored user information from cookies
+
         const userDetailsCookie = document.cookie.split('; ').find(row => row.startsWith('userDetails='));
 
         if (userDetailsCookie) {
@@ -16,7 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
             try {
                 const storedUserData = JSON.parse(userDataJSON);
 
-                // 验证用户名和密码是否与存储的匹配
+                // Obtain stored user information from cookies
+
                 if (username === storedUserData.username && password === storedUserData.password) {
                     alert('Login successful!');
                     window.location.href = 'shopping.html';
