@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // 初始化：绑定事件监听器
+    // Initialization: Bind an event listener
+
     initializeEventListeners();
 });
 
@@ -74,6 +75,7 @@ function updateTotal() {
 }
 
 function updateTotalDisplay() {
-    updateTotal(); // 确保总价是最新的
+    updateTotal(); //Make sure the total price is up to date
+
     alert("Checkout process would start here with total: $" + document.querySelector('#total-value').textContent);
 }
