@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function displayUserDataFromCookie() {
     const userList = document.getElementById('cookieList');
-    userList.innerHTML = ''; // 清空现有列表内容
+    userList.innerHTML = ''; // Clear existing list content
 
     const cookies = document.cookie.split(';');
     let foundUserData = false;
