@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="shopping.html">Shop</a></li>
+                <li><a href="details.html">details</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to Our Shop , I am Walther !</h1>
+        <img src="hero-banner.jpg" alt="Hero Banner" class="hero-banner">
+        <div id="create-user" class="container">
+            <h2>Create New User</h2>
+            <form id="registrationForm">
+                <label for="username">Username:</label>
+                <input type="text" id="usernameInput" placeholder="Username">
+                <label for="password">Password:</label>
+                <input type="password" id="passwordInput" placeholder="Password">
+                <button type="submit">Create User</button>
+            </form>
+            <p id="registrationStatus" class="status-message"></p>
+        </div>
+    </main>
+    <footer>
+        &copy; 2023 Wang Zhe Walther, 1805214570@qq.com | All Rights Reserved
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
