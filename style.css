@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    margin-bottom: 0; /* 或者设定一个具体的较小值，例如10px，根据你的需要调整 */
+}
+
+nav {
+    background-color: #000;
+    height: 60px; /* 您可以根据需要调整这个数值 */
+    line-height: 60px; /* 使文本垂直居中 */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #000; /* 新增：设置导航栏背景为黑色 */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    display: inline-block; /* 确保链接在垂直居中时表现正常 */
+    padding: 0 15px; /* 根据需要调整左右内边距 */
+}
+
+.hero-banner {
+    background-size: cover; /* 保持图片填充容器，同时保持宽高比 */
+    background-position: center center; /* 图片居中显示 */
+    color: white;
+    text-align: center;
+    padding: 0 0; /* 根据需要调整上下内边距 */
+    width: 100%; /* 确保hero-banner宽度为页面全宽 */
+    height: 400px;
+}
+
+#loginForm, #registrationForm {
+    width: 300px;
+    margin: 50px auto;
+    text-align: left;
+}
+
+#loginForm label, #loginForm input,
+#registrationForm label, #registrationForm input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.container {
+    width: 300px;
+    margin: 50px auto;
+    margin-top: 30px; /* 在hero-banner之后添加一些顶部外边距，根据需要调整 */
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: #000; /* 新增：设置页脚背景为黑色 */
+    color: #fff; /* 新增：设置页脚文字颜色为白色 */
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #fff; /* 确保页脚中的链接也是白色 */
+    text-decoration: underline;
+}
+
+/* 可选：当鼠标悬停在页脚链接上时改变颜色 */
+footer a:hover {
+    color: #ccc;
+}
+
+
+.details-container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: left;
+}
+
+#cookieList {
+    list-style: none;
+    padding: 0;
+}
+
+.cookie-item {
+    margin-bottom: 10px;
+}
+
+.delete-button {
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: 10px;
+}
