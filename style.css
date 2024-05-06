@@ -110,3 +110,44 @@ footer a:hover {
     text-decoration: underline;
     margin-left: 10px;
 }
+
+.products {
+    display: flex; /* 使商品并排显示 */
+    justify-content: space-around; /* 分布间隔 */
+  }
+  
+  .product {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .quantity-input {
+    width: 50px;
+  }
+  
+  .separator {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  .cart {
+    text-align: center;
+  }
+  
+  #cart-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .cart-remove {
+    cursor: pointer;
+    color: red;
+  }
