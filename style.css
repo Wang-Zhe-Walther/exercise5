@@ -3,19 +3,23 @@ body {
 }
 
 header {
-    margin-bottom: 0; /* 或者设定一个具体的较小值，例如10px，根据你的需要调整 */
+    margin-bottom: 0; /* Or set a specific smaller value, such as 10px, to adjust according to your needs
+ */
 }
 
 nav {
     background-color: #000;
-    height: 60px; /* 您可以根据需要调整这个数值 */
-    line-height: 60px; /* 使文本垂直居中 */
+    height: 60px; /* You can adjust this value as needed
+ */
+    line-height: 60px; /* Center the text vertically
+ */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    background-color: #000; /* 新增：设置导航栏背景为黑色 */
+    background-color: #000; /* New: Set navigation bar background to black
+ */
 }
 
 nav ul li {
@@ -25,17 +29,22 @@ nav ul li {
 
 nav ul li a {
     color: #fff;
-    display: inline-block; /* 确保链接在垂直居中时表现正常 */
-    padding: 0 15px; /* 根据需要调整左右内边距 */
+    display: inline-block; /* Make sure the link behaves properly when vertically centered
+ */
+    padding: 0 15px; /* Adjust the left and right padding as needed
+ */
 }
 
 .hero-banner {
-    background-size: cover; /* 保持图片填充容器，同时保持宽高比 */
-    background-position: center center; /* 图片居中显示 */
+    background-size: cover; /* Keep the picture filling container while maintaining the aspect ratio
+ */
+    background-position: center center; /* The image is displayed in the center
+ */
     color: white;
     text-align: center;
-    padding: 0 0; /* 根据需要调整上下内边距 */
-    width: 100%; /* 确保hero-banner宽度为页面全宽 */
+    padding: 0 0; /* Adjust the padding as needed
+ */
+    width: 100%; 
     height: 400px;
 }
 
@@ -62,7 +71,8 @@ button {
 .container {
     width: 300px;
     margin: 50px auto;
-    margin-top: 30px; /* 在hero-banner之后添加一些顶部外边距，根据需要调整 */
+    margin-top: 30px; /* Add some top padding after hero-banner, adjust as needed
+ */
     text-align: left;
     padding: 20px;
     border: 1px solid #ddd;
@@ -71,19 +81,21 @@ button {
 }
 
 footer {
-    background-color: #000; /* 新增：设置页脚背景为黑色 */
-    color: #fff; /* 新增：设置页脚文字颜色为白色 */
+    background-color: #000; /* New: Set footer background to black
+ */
+    color: #fff; /* New: Set footer text color to white
+ */
     text-align: center;
     padding: 20px;
     margin-top: 50px;
 }
 
 footer a {
-    color: #fff; /* 确保页脚中的链接也是白色 */
+    color: #fff; /*  */
     text-decoration: underline;
 }
 
-/* 可选：当鼠标悬停在页脚链接上时改变颜色 */
+/*  */
 footer a:hover {
     color: #ccc;
 }
@@ -112,8 +124,8 @@ footer a:hover {
 }
 
 .products {
-    display: flex; /* 使商品并排显示 */
-    justify-content: space-around; /* 分布间隔 */
+    display: flex; /*  */
+    justify-content: space-around; /*  */
   }
   
   .product {
