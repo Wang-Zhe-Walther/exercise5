@@ -1,45 +1,34 @@
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('loginForm');
+    const actionMessageElement = document.getElementById('loginStatus'); // 假设有一个元素用于显示登录状态信息
 
     loginForm.addEventListener('submit', function(event) {
         event.preventDefault();
 
-        const username = document.getElementById('username').value;
+        const username = document.getElementById('username').value; // 确保表单字段ID与这里的匹配
         const password = document.getElementById('password').value;
 
-        // 获取存储在Cookie中的用户凭证
-        const userCredentials = getCookie('userCredentials');
-        if (userCredentials) {
-            try {
-                const credentials = JSON.parse(userCredentials);
+        // 从Cookie中获取已存储的用户信息
+        const userDetailsCookie = document.cookie.split('; ').find(row => row.startsWith('userDetails='));
 
-                // 验证用户名和密码
-                if (username === credentials.username && password === credentials.password) {
+        if (userDetailsCookie) {
+            const userDataJSON = decodeURIComponent(userDetailsCookie.split('=')[1]);
+            try {
+                const storedUserData = JSON.parse(userDataJSON);
+
+                // 验证用户名和密码是否与存储的匹配
+                if (username === storedUserData.username && password === storedUserData.password) {
                     alert('Login successful!');
                     window.location.href = 'shopping.html';
                 } else {
-                    alert('Invalid username or password.');
-                    window.location.href = 'index.html';
+                    actionMessageElement.textContent = "Invalid username or password.";
                 }
             } catch (e) {
                 console.error('Error parsing cookie data:', e);
-                alert('Error in user credentials format.');
+                actionMessageElement.textContent = "Error in user credentials format.";
             }
         } else {
-            alert('No user registered yet.');
-            window.location.href = 'index.html';
+            actionMessageElement.textContent = "No user registered yet.";
         }
     });
 });
-
-// 函数用于从Cookie中获取指定名称的值
-function getCookie(name) {
-    const nameEQ = name + "=";
-    const ca = document.cookie.split(';');
-    for(let i=0;i < ca.length;i++) {
-        let c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length,c.length);
-    }
-    return null;
-}
