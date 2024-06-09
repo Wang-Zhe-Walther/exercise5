@@ -1,3 +1,4 @@
+//English name: Walther
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('loginForm');
     const actionMessageElement = document.getElementById('loginStatus'); // Let's say you have an element that displays login status information
