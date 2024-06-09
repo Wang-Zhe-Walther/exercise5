@@ -1,3 +1,4 @@
+//English name: Walther
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('registrationForm');
     const actionMessageElement = document.getElementById('registrationStatus');
