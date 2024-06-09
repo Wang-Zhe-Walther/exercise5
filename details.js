@@ -1,3 +1,4 @@
+//English name: Walther
 document.addEventListener('DOMContentLoaded', function() {
     displayUserDataFromCookie();
     document.getElementById('deleteAllButton').addEventListener('click', deleteAllUserData);
