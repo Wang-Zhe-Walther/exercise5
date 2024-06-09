@@ -1,3 +1,4 @@
+//English name: Walther
 document.addEventListener('DOMContentLoaded', function() {
     // Initialization: Bind an event listener
 
